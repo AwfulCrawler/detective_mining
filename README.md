@@ -23,6 +23,24 @@ In order to match the graphs in the paper, with all else being equal, the detect
 block instead.  In the case of a selfish lead of one block, the detectives stay on the honest chain.  See the rudimentary scripts
 already implemented above, as well as the resulting graphs.
 
+## Figure 12 appears to be incorrect
+
+I have been trying to recreate figure 12 and have been unsuccessful both with having detective miners build on the tip of the selfish chain
+and having them build on the 2nd to top.  Looking closer at figure 12 I believe it does not match figure 11 in the places where it should,
+and is therefore incorrect.
+
+In the paper, the x axis of figure 12 is labelled "Leakage ratio (%)", a term which is used nowhere else in the paper (this paper is terrible by the way).
+However on the previous page of the paper they state:
+>The X-axis of the graph means variation of the ratio of the detective mining to the miners except the selfish miners
+
+The "ratio of detective mining to the miners except selfish miners" matches their description of theta, so one can reasonably deduce that the x axis
+is theta.  This also makes sense since in each subplot of figure 12 gamma is 0.5 and alpha is held constant.  Thus theta is the only thing left to vary.
+
+With that confusion out of the way, when theta is 100% the relative extra revenue (RER) should match what we see in figure 11.  In figure 11, for theta = 100%
+it can be seen that for the hashrates alpha=0.35, 0.40, 0.45, selfish mining is LESS PROFITABLE THAN HONEST MINING, and therefore the RER should be NEGATIVE at
+theta = 100% for ALL SUBPLOTS in figure 12.  However, if you look at the subplots for alpha = 0.4 and alpha = 0.5, you can see that the RER for selfish mining
+is all positive.  Therefore the graphs don't match.
+
 ## Issues with the assumptions of the paper
 
 In the paper, they assume that the selfish miner reveals their hidden blocks as soon as they see a detective block.  The assumption
