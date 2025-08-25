@@ -6,6 +6,7 @@ Simulations relating to the [detective mining](https://eprint.iacr.org/2019/486)
 
   - [The paper implements their own model incorrectly](#the-paper-implements-their-own-model-incorrectly)
   - [Issues with the assumptions of the paper](#issues-with-the-assumptions-of-the-paper)
+  - [Figure 12 appears to be incorrect](#figure-12-appears-to-be-incorrect)
   - [Things to do](#things-to-do)
 
 ## The paper implements their own model incorrectly
