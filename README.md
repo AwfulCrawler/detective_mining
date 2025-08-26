@@ -1,6 +1,8 @@
 # Detective Mining Simulation
 
 Simulations relating to the [detective mining](https://eprint.iacr.org/2019/486) paper.
+The first_attempt directory has a first basic attempt at producing fig 11. fig11_and_12_recreation has a bigger script attempting to recreate all plots in
+fig 11 and fig 12.  I cannot reproduce fig 11 at the moment.  See notes below.
 
 ## Table of Contents
 
