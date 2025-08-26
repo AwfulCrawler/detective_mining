@@ -22,7 +22,7 @@ side.  This is the same as honest mining, so the case theta=100% corresponds to 
 
 In order to match the graphs in the paper, with all else being equal, the detective miners must mine on the 2nd to top selfish
 block instead.  In the case of a selfish lead of one block, the detectives stay on the honest chain.  See the rudimentary scripts
-already implemented above, as well as the resulting graphs.
+already implemented in the first_attempt directory, as well as the resulting graphs.
 
 ## Figure 12 appears to be incorrect
 
