@@ -32,7 +32,7 @@ I have been trying to recreate figure 12 and have been unsuccessful both with ha
 and having them build on the 2nd to top.  Looking closer at figure 12 I believe it does not match figure 11 in the places where it should,
 and is therefore incorrect.
 
-In the paper, the x axis of figure 12 is labelled "Leakage ratio (%)", a term which is used nowhere else in the paper (this paper is terrible by the way).
+In the paper, the x axis of figure 12 is labelled "Leakage ratio (%)", a term which is used nowhere else in the paper.
 However on the previous page of the paper they state:
 >The X-axis of the graph means variation of the ratio of the detective mining to the miners except the selfish miners
 
