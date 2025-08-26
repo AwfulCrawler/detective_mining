@@ -42,6 +42,9 @@ it can be seen that for the hashrates alpha=0.35, 0.40, 0.45, selfish mining is 
 theta = 100% for ALL SUBPLOTS in figure 12.  However, if you look at the subplots for alpha = 0.4 and alpha = 0.5, you can see that the RER for selfish mining
 is all positive.  Therefore the graphs don't match.
 
+The directory fig11_and_12_recreation contains code and plots for fig11 and fig12 which are consistent with each other, although I am not 100% sure
+of the results.
+
 ## Issues with the assumptions of the paper
 
 In the paper, they assume that the selfish miner reveals their hidden blocks as soon as they see a detective block.  The assumption
