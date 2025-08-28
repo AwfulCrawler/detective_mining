@@ -63,6 +63,13 @@ is inaduately justified.
 All of the above points make this a risky assumption.  When considering implementing detective mining the risk of increasing reorg
 length should be taken into serious consideration.
 
+It occurs to me that even with a naive definition of profit it should rather be number of blocks per unit time, rather than percentage of blocks won.
+Assuming a constant block time this won't make a difference, but the presence of the selfish mining must have some effect on the difficulty adjustment (and therefore time between blocks).  I think one could expect it to be a negligible difference but this is not an established fact and should probably be investigated.
+This is probably outside the scope of what I am trying to do here.  
+
+I want to emphasize that I believe it is premature to state as fact that this proposal is *the* answer to selfish mining.  The risks of being wrong are too great
+and warrant a corresponding degree of scepticism and scrutiny.
+
 ## Things to do
 
 With the toy model from the paper as a starting point, I intend to try different selfish mining strategies under the correct (mine the tip) and incorrect (mine 2nd from the tip) detective mining implementations, as well as variations in the honest mining response.
