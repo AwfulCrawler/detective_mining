@@ -7,6 +7,10 @@ selfish lead to one block.
 
 Results are again for either detectives building on the tip of the selfish chain or 2nd from the top.
 
+When detectives are mining on the tip, in the case of a fork between an honest block and a selfish block, the detective miners act like honest miners and have a probability of gamma of mining on the selfish tip.  When
+the detectives are mining 2nd from the top, they never choose the selfish fork.  In either case, if there
+is a fork between an explicit detective block and a selfish block, the detectives mine on their own fork.
+
 Code is a bit iffy but assuming correct it shows detective mining makes things worse if the selfish miner ignores detectives,
 and it seems that ignoring detectives can be more profitable than immediately publishing as soon as one detective block is seen.
 
